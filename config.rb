@@ -75,3 +75,14 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+# Activate sync extension
+activate :sync do |sync|
+  sync.fog_provider = ENV['FOG_PROVIDER'] # Your storage provider
+  sync.fog_directory = ENV['FOG_DIRECTORY'] # Your bucket name
+  sync.fog_region = ENV['FOG_REGION'] # The region your storage bucket is in
+  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID'] # Your Amazon S3 access key
+  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY'] # Your Amazon S3 access secret
+  sync.existing_remote_files = 'keep' # What to do with your existing remote files? (keep or delete)
+  sync.after_build = true # Run sync after build
+end
