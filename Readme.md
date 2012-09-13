@@ -24,6 +24,8 @@ AWS_SECRET_ACCESS_KEY=your_secret_access_key
 
 Once that's taken care of it's easy to generate the site and push it up to S3:
 
+**KNOWN ISSUE**: The build process is currently broken (waiting for a Middleman Sync fix).
+
 ```
 export $(cat .env)
 bundle exec build
