@@ -1,0 +1,13 @@
+@mixin horizontal-line($position, $color: $default-line-color, $background-color: $default-background-color) {
+  @include background-image(linear-gradient(left, $background-color, $color 10%, $color 90%, $background-color));
+  background-position: $position center;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+@mixin vertical-line($position, $color: $default-line-color, $background-color: $default-background-color) {
+  @include background-image(linear-gradient(top, $background-color, $color 10%, $color 90%, $background-color));
+  background-position: 75% center;
+  background-repeat: no-repeat;
+  background-size: 1px 100%;
+}

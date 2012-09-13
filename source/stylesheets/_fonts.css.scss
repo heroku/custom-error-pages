@@ -1,0 +1,9 @@
+@include font-face("corbel", inline-font-files("corbel.woff", woff));
+
+@mixin proxima-nova-font-stack {
+  font-family: "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif;
+}
+
+@mixin corbel-font-stack {
+  font-family: corbel, "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif;
+}

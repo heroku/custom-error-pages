@@ -1,0 +1,53 @@
+@import "compass/reset";
+@import "compass";
+
+@import "fonts";
+@import "lines";
+
+// Layout settings
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+// Colors
+$default-background-color: #1B1B24;
+
+$default-text-color: #626270;
+$default-heading-color: white;
+
+$default-line-color: #2A2A38;
+
+@include establish-baseline;
+
+body {
+  @include proxima-nova-font-stack;
+  background: $default-background-color;
+  color: $default-text-color;
+  font-size: $base-font-size;
+}
+
+.l-wrapper {
+  margin: 85px auto;
+  max-width: 800px;
+}
+
+.error-404,
+.error-500,
+.error-503 {
+  background: image-url("fallen-crane.png") center top no-repeat;
+  background-size: 300px 250px;
+  padding-top: 250px;
+  text-align: center;
+
+  h2 {
+    @include corbel-font-stack;
+    @include horizontal-line(bottom);
+    color: $default-heading-color;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
