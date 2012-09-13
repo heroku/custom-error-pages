@@ -28,5 +28,5 @@ Once that's taken care of it's easy to generate the site and push it up to S3:
 
 ```bash
 export $(cat .env)
-bundle exec build
+bundle exec middleman build
 ```
