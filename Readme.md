@@ -22,9 +22,7 @@ AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret_access_key
 ```
 
-Once that's taken care of it's easy to generate the site and push it up to S3:
-
-**KNOWN ISSUE**: Asset sync is currently broken (waiting for a Middleman Sync fix).
+It's then easy to generate the site and push it up to S3:
 
 ```bash
 export $(cat .env)
