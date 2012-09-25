@@ -16,7 +16,7 @@ You need a `.env` file with AWS credentials:
 
 ```
 FOG_PROVIDER=AWS
-FOG_DIRECTORY=some.bucket
+FOG_DIRECTORY=some-bucket
 FOG_REGION=us-east-1
 AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret_access_key
