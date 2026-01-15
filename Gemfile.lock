@@ -23,7 +23,7 @@ GEM
     excon (0.16.7)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    ffi (1.1.5)
+    ffi (1.15.5)
     fog (1.6.0)
       builder
       excon (~> 0.14)
